@@ -72,11 +72,11 @@ public:
 
 	Matrix3 Scale(double dx, double dy);
 
-	Matrix3 RotationX(int _angle);
+	Matrix3 RotationX(double _angle);
 
-	Matrix3 RotationY(int _angle);
+	Matrix3 RotationY(double _angle);
 
-	Matrix3 RotationZ(int _angle);
+	Matrix3 RotationZ(double _angle);
 
 	Matrix3 Scale3D(double dx);
 

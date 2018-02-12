@@ -240,14 +240,40 @@ void Game::update()
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))//Rotates Right
 	{
 		m_changed = true;
-		m_Matrix = m_Matrix.Rotation(1);
+		m_Matrix = m_Matrix.RotationX(1);
 
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))//Rotates Left
 	{
 		m_changed = true;
-		m_Matrix = m_Matrix.Rotation(-1);
+		m_Matrix = m_Matrix.RotationX(-1);
 	}
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::I))//Rotates Right
+	{
+		m_changed = true;
+		m_Matrix = m_Matrix.RotationY(1);
+
+	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::O))//Rotates Left
+	{
+		m_changed = true;
+		m_Matrix = m_Matrix.RotationY(-1);
+	}
+
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::N))//Rotates Right
+	{
+		m_changed = true;
+		m_Matrix = m_Matrix.RotationY(1);
+
+	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::M))//Rotates Left
+	{
+		m_changed = true;
+		m_Matrix = m_Matrix.RotationZ(-1);
+	}
+
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))//Moves Right
 	{
 		m_changed = true;

@@ -260,7 +260,7 @@ Matrix3 Matrix3::Scale(double dx, double dy)
 		0, 0, 1);
 }
 
-Matrix3 Matrix3::RotationX(int _angle)
+Matrix3 Matrix3::RotationX(double _angle)
 {
 	double radians = PI / 180 * _angle;
 	Matrix3 answer = Matrix3();
@@ -277,7 +277,7 @@ Matrix3 Matrix3::RotationX(int _angle)
 	return answer;
 }
 
-Matrix3 Matrix3::RotationY(int _angle)
+Matrix3 Matrix3::RotationY(double _angle)
 {
 	double radians = PI / 180 * _angle;
 	Matrix3 answer = Matrix3();
@@ -294,7 +294,7 @@ Matrix3 Matrix3::RotationY(int _angle)
 	return answer;
 }
 
-Matrix3 Matrix3::RotationZ(int _angle)
+Matrix3 Matrix3::RotationZ(double _angle)
 {
 	double radians = PI / 180 * _angle;
 	Matrix3 answer = Matrix3();
