@@ -14,6 +14,7 @@ using namespace sf;
 //@Author Sean Nash De Andrade
 //@Login C00217019
 //Cube Buffer Assignment
+//Known Issues: The Scaling has a distorting effect on the cube. Translation breaks apart the cube. Unsure as to the cause.
 class Game
 {
 public:
@@ -29,7 +30,15 @@ private:
 	void update();
 	void render();
 	void unload();
+	void setUpColour();
 	bool m_changed;
+	sf::Vector3f m_colourArray[6] = { 
+	{ 1,0,0 },//RED
+	{ 0,1,0 },//GREEN
+	{ 0,0,1 },//BLUE
+	{ 1,1,0 },//YELLOW
+	{ 0,1,1 },//AQUA
+	{ 1,0,1 } };//PINK
 	float m_vertexArray[24];//Array to hold the co ordinates in a format Open GL can use
 	unsigned int vertex_index[36] = {
 		0, 1, 2, //Triangle 0 Side 1
