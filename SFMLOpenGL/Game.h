@@ -14,7 +14,7 @@ using namespace sf;
 //@Author Sean Nash De Andrade
 //@Login C00217019
 //Cube Buffer Assignment
-//Known Issues: The Scaling has a distorting effect on the cube. Translation breaks apart the cube. Unsure as to the cause.
+//Known Issues:  Translation breaks apart the cube. Unsure as to the cause.
 class Game
 {
 public:

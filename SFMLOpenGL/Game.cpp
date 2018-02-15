@@ -2,7 +2,7 @@
 //@Author Sean Nash De Andrade
 //@Login C00217019
 //Cube Buffer Assignment
-//Known Issues: The Scaling has a distorting effect on the cube. Translation breaks apart the cube. Unsure as to the cause.
+//Known Issues: Translation breaks apart the cube. Unsure as to the cause.
 static bool flip;
 
 Game::Game() : window(VideoMode(800, 600), "OpenGL Cube VBO - Seans Nash")
@@ -149,12 +149,12 @@ void Game::update()
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Q))//Scales Down
 	{
 		m_changed = true;
-		m_Matrix = m_Matrix.Scale(99.99, 99.99);
+		m_Matrix = m_Matrix.Scale3D(99.95);
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))//Scales Up
 	{
 		m_changed = true;
-		m_Matrix = m_Matrix.Scale(100.01, 100.01);
+		m_Matrix = m_Matrix.Scale3D(100.05);
 	}
 
 	if (m_changed == true)//If something has needs to be changed the bool is reset and the vertices are transformed by the matrix
